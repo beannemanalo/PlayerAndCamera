@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     GroundChecker _groundChecker;
     public float Speed = 1;
     public float JumpSpeed = 10;
-    public float AirControl = 1;
+    public float AirControl;
     private Vector3 _lastVelocity;
 
     void Start()
@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Move();
     }
 
